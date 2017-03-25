@@ -1,0 +1,22 @@
+{
+  "name": "karla_conekta_webservice",
+  "version": "1.0.0",
+  "description": "hapijs webservice for python lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarlaRobinson/python_hapijs_webservice.git"
+  },
+  "author": "Karla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarlaRobinson/python_hapijs_webservice/issues"
+  },
+  "homepage": "https://github.com/KarlaRobinson/python_hapijs_webservice#readme",
+  "dependencies": {
+    "hapi": "^16.1.0"
+  }
+}
