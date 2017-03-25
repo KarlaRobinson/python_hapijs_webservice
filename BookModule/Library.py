@@ -1,3 +1,7 @@
+from pymongo import MongoClient
+client = MongoClient()
+db = client.primer
+
 class Book(object):
 	idCounter = 1
 

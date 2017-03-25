@@ -61,7 +61,7 @@ server.register(require('inert'), (err) => {
 
     server.route({
         method: 'POST',
-        path: '/books',
+        path: '/',
         handler: function (request, reply) {
             reply.file('./book/index.html');
         }
