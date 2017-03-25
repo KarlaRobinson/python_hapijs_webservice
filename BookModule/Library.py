@@ -1,6 +1,9 @@
+import yaml
+
 from pymongo import MongoClient
 client = MongoClient()
 db = client.primer
+coll = db.dataset
 
 class Book(object):
 	idCounter = 1
@@ -15,8 +18,6 @@ class Book(object):
 		# -> guardar en mongodb
 		print "Created"
 
-	def _response(self):
-		self.ok = True
+	# def _response(self):
 
-	def get(id):
-		print
+	# def get(id):
