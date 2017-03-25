@@ -28,10 +28,27 @@ server.register(require('inert'), (err) => {
     }
 
     server.route({
+        method: 'GET',
+        path: '/books',
+        handler: function (request, reply) {
+            reply.file('./book/index.html');
+        }
+    });
+
+});
+
+server.register(require('inert'), (err) => {
+
+    if (err) {
+        throw err;
+    }
+
+    server.route({
         method: 'POST',
-        path: '/show',
+        path: '/books/{id}',
         handler: function (request, reply) {
             reply('Searching');
+            // var status = function () {this.reply('ok');};
         }
     });
 
@@ -45,7 +62,7 @@ server.register(require('inert'), (err) => {
 
     server.route({
         method: 'GET',
-        path: '/show',
+        path: '/books/{id}',
         handler: function (request, reply) {
             reply.file('./book/show.html');
         }
@@ -61,7 +78,7 @@ server.register(require('inert'), (err) => {
 
     server.route({
         method: 'POST',
-        path: '/',
+        path: '/books',
         handler: function (request, reply) {
             reply.file('./book/index.html');
         }

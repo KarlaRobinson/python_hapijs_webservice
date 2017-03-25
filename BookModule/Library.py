@@ -21,3 +21,6 @@ class Book(object):
 	# def _response(self):
 
 	# def get(id):
+
+	# def show():
+		

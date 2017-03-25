@@ -1,6 +1,6 @@
 <fieldset class="input">
   <legend>Find a book</legend>
-  <form action='/show' method="search">
+  <form action='/books/id' method="search">
     <input type="text" placeholder="Title" name="title">
     <input type="text" placeholder="Author" name="author">
     <input type="submit" value="Search">
@@ -9,7 +9,7 @@
 
 <fieldset class="input">
   <legend>Add a book</legend>
-  <form action='/' method="post">
+  <form action='/books' method="post">
     <input type="text" placeholder="Title" name="title">
     <input type="text" placeholder="Author" name="author">
     <input type="submit" value="Create">
