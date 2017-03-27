@@ -13,6 +13,7 @@ book = Library.Book({
 
 book.create()
 
+
 # print book._response.ok == true
 # print book.id
 

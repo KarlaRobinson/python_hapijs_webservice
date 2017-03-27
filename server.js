@@ -57,7 +57,8 @@ server.register(require('inert'), (err) => {
 server.register(require('inert'), (err) => {
 
     if (err) {
-        throw err;
+        throw {error: '', ok: false}
+        // throw err;
     }
 
     server.route({
@@ -65,6 +66,10 @@ server.register(require('inert'), (err) => {
         path: '/books/{id}',
         handler: function (request, reply) {
             reply.file('./book/show.html');
+            // {
+            // item: {title: '', author: '', id: ''},
+            // ok: true
+            // }
         }
     });
 
